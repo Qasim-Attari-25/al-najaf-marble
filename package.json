@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://tomandjerry25.github.io/al-najaf-marble",
+  "homepage": "https://Qasim-Attari-25.github.io/al-najaf-marble",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
