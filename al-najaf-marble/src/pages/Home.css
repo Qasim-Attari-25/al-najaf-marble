@@ -1,0 +1,36 @@
+/* Home.css */
+
+.slider-wrapper {
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  background-color: #f8f9fa; /* Optional subtle background */
+}
+
+.slider-track {
+  display: flex;
+  width: calc(100vw * 6); /* 6 images total for loop */
+  animation: scroll 60s linear infinite;
+}
+
+.slider-img {
+  flex: 0 0 100vw;
+  height: 80vh;
+  object-fit: cover;
+}
+
+/* Slow continuous horizontal scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: Pause on hover */
+.slider-wrapper:hover .slider-track {
+  animation-play-state: paused;
+}
